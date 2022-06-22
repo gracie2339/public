@@ -1,5 +1,3 @@
-# %%
-
 import requests
 import json
 import pandas as pd
@@ -160,9 +158,3 @@ if __name__ == "__main__":
     finally:
         conn.close()
         print("Database closed successfully.")
-    
-
-    
-
-
-# %%
