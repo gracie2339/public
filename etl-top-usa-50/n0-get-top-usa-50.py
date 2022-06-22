@@ -139,7 +139,7 @@ if __name__ == "__main__":
     conn = sqlite3.connect('spotify.sqlite') # Connecting to the database
     cursor = conn.cursor()
 
-    # Write query for loading data into "tracks" table
+    # Write query for loading data into "tracks" table:
     sql_query = """
         CREATE TABLE IF NOT EXISTS tracks(
             track_name VARCHAR(200),
@@ -150,6 +150,7 @@ if __name__ == "__main__":
         )
     """ 
 
+    # Execute query and close connection:
     cursor.execute(sql_query)
     print("Opened database successfully.")
 
